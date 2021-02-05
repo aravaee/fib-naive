@@ -5,7 +5,22 @@
 
 ## The sequence F<sub>n</sub> of Fibonacci numbers is defined by the recurrence relation:
 
-F<sub>n</sub> = F<sub>n-1</sub> + F<sub>n-1</sub>, Where F<sub>0</sub> = 0 and F<sub>1</sub> = 1.
+F<sub>n</sub> = F<sub>n-1</sub> + F<sub>n-1</sub>, Where F<sub>0</sub> = 0 and F<sub>1</sub> = 1
+
+## Direct recursive implementation mathematical recurrence relation:
+
+```c++
+long fib(int num)
+{
+    if (num <= 1)
+        return num;
+    return fib(num - 1) + fib(num - 2);
+}
+```
+
+### Time Complexity
+
+The time taken by recursive Fibonacci is O(2<sup>n</sup>)
 
 ## Compile and Run:
 
